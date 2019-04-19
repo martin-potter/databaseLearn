@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $table = 'products';
+    const TABLE = 'products';
     const ID = 'id';
     const NAME = 'pname';
     const QOH = 'qoh';

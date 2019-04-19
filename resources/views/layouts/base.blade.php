@@ -34,7 +34,7 @@
 
 <body class="bg-white" data-bg-color="bg-white">
 <div class="king-page-box">
-    @include('layouts._header')
+    @include('layouts._header', isset($array) ? $array : [])
     <div>
         @yield('content')
     </div>

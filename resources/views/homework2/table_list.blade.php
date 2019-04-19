@@ -1,105 +1,47 @@
-@extends('layouts.base')
+@extends('layouts.base',['array' => ['menu_3' => '1']])
 
 @section('content')
-<div class="king-layout2-main mt15" style="width:960px;">
-    <div class="king-instruction  king-instruction-info ">
-        <h5>提示说明</h5>
-        <p>您可以设置应用运行时的环境变量，在进行测试部署和正式部署操作时会生效</p>
-    </div>
-    <p></p>
-    <div class="panel panel-default mb0">
-        <div class="panel-heading"> 面板标题 </div>
-        <div class="panel-body">
-            <button type="button" class="king-btn mr10  king-success">新增</button>
-            <p></p>
-            <table class="table mb0 pr15 ranger-box2  ">
-                <thead>
-                <tr>
-                    <th style="width: 70px;">#</th>
-                    <th style="width: 15%;">名称</th>
-                    <th style="width: 15%;">位置</th>
-                    <th style="width: 15%;">日期</th>
-                    <th style="width: 15%;">类型</th>
-                    <th>操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td style="width: 70px;">1</td>
-                    <td style="width: 15%;">Ravi Kumar</td>
-                    <td style="width: 15%;">India</td>
-                    <td style="width: 15%;">23/12/2012</td>
-                    <td style="width: 15%;">Paid</td>
-                    <td>
-                        <button class="btn btn-xs btn-success"> <i class="glyphicon glyphicon-ok"></i> </button>
-                        <button class="btn btn-xs btn-warning"> <i class="glyphicon glyphicon-edit"></i> </button>
-                        <button class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-remove"></i> </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 70px;">2</td>
-                    <td style="width: 15%;">Ravi Kumar</td>
-                    <td style="width: 15%;">India</td>
-                    <td style="width: 15%;">23/12/2012</td>
-                    <td style="width: 15%;">Paid</td>
-                    <td>
-                        <button class="btn btn-xs btn-success"> <i class="glyphicon glyphicon-ok"></i> </button>
-                        <button class="btn btn-xs btn-warning"> <i class="glyphicon glyphicon-edit"></i> </button>
-                        <button class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-remove"></i> </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 70px;">3</td>
-                    <td style="width: 15%;">Ravi Kumar</td>
-                    <td style="width: 15%;">India</td>
-                    <td style="width: 15%;">23/12/2012</td>
-                    <td style="width: 15%;">Paid</td>
-                    <td>
-                        <button class="btn btn-xs btn-success"> <i class="glyphicon glyphicon-ok"></i> </button>
-                        <button class="btn btn-xs btn-warning"> <i class="glyphicon glyphicon-edit"></i> </button>
-                        <button class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-remove"></i> </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 70px;">4</td>
-                    <td style="width: 15%;">Ravi Kumar</td>
-                    <td style="width: 15%;">India</td>
-                    <td style="width: 15%;">23/12/2012</td>
-                    <td style="width: 15%;">Paid</td>
-                    <td>
-                        <button class="btn btn-xs btn-success"> <i class="glyphicon glyphicon-ok"></i> </button>
-                        <button class="btn btn-xs btn-warning"> <i class="glyphicon glyphicon-edit"></i> </button>
-                        <button class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-remove"></i> </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 70px;">5</td>
-                    <td style="width: 15%;">Ravi Kumar</td>
-                    <td style="width: 15%;">India</td>
-                    <td style="width: 15%;">23/12/2012</td>
-                    <td style="width: 15%;">Paid</td>
-                    <td>
-                        <button class="btn btn-xs btn-success"> <i class="glyphicon glyphicon-ok"></i> </button>
-                        <button class="btn btn-xs btn-warning"> <i class="glyphicon glyphicon-edit"></i> </button>
-                        <button class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-remove"></i> </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 70px;">6</td>
-                    <td style="width: 15%;">Ravi Kumar</td>
-                    <td style="width: 15%;">India</td>
-                    <td style="width: 15%;">23/12/2012</td>
-                    <td style="width: 15%;">Paid</td>
-                    <td>
-                        <button class="btn btn-xs btn-success"> <i class="glyphicon glyphicon-ok"></i> </button>
-                        <button class="btn btn-xs btn-warning"> <i class="glyphicon glyphicon-edit"></i> </button>
-                        <button class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-remove"></i> </button>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <!-- 设置面板End -->
+    <div class="king-layout2-main mt15" style="width:960px;">
+        <div class="king-instruction  king-instruction-info ">
+            <h5>作业二</h5>
+            <p>建立相关数据的数据库，并用一个页面显示所有的表名，即要求用户点击该表名显示出该表所有记录。并完成插入记录，删除记录以及修改记录的功能。
+            </p>
+            <p>注:所有的思考题均要求网页代码和运行后的界面。注意界面设计及美观性。</p>
+        </div>
+        <p></p>
+        <div class="panel panel-default mb0">
+            <div class="panel-heading"> 数据表 table </div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th style="width: 7%">序号</th>
+                        <th style="width:20%;">表名</th>
+                        <th>备注</th>
+                        <th>数据条目</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($table as $item)
+                        <tr>
+                            <td>{{$item['id']}}</td>
+                            <td>{{$item['table']}}</td>
+                            <td>{{$item['desc']}}</td>
+                            <td>{{$item['num']}}</td>
+                            <td>
+                                <a href={{empty($item['route']) ? '' : route($item['route'])}}>
+                                    <button class="btn btn-xs btn-primary" title="编辑">
+                                        <i class="glyphicon glyphicon-edit"></i> 编辑
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+                <!-- 设置面板End -->
+            </div>
         </div>
     </div>
-</div>
 @stop

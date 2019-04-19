@@ -8,14 +8,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="javascript:;">
+                <a class="navbar-brand" href="{{route('index')}}">
                     数据库作业 </a>
             </div>
             <div class="collapse navbar-collapse navbar-responsive-collapse" id="king-horizontal-nav2-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="king-navbar-active"><a href="javascript:void(0);">首页</a></li>
-                    <li><a href="javascript:void(0);">作业一</a></li>
-                    <li><a href="javascript:void(0);">作业二</a></li>
+                    <li {{ isset($menu_1) ? 'class=king-navbar-active' : '' }}><a href="{{route('index')}}">首页</a></li>
+                    <li {{ isset($menu_2) ? 'class=king-navbar-active' : '' }}><a href="{{route('hw1')}}">作业一</a></li>
+                    <li {{ isset($menu_3) ? 'class=king-navbar-active' : '' }}><a href="{{route('hw2')}}">作业二</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>

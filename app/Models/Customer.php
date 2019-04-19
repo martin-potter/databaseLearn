@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
+    protected $table = 'customers';
+    const TABLE = 'customers';
     const ID = 'id';
     const NAME = 'cname';
     const CITY = 'city';

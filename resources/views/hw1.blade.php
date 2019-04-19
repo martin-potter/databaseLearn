@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.base',['array' => ['menu_2' => '1']])
 
 @section('content')
     <div class="king-layout2-main mt15" style="width:960px;">
@@ -8,7 +8,7 @@
         @include('shared._show2col',[
             'value_1' => now(),
             'col_1' => '当前日期',
-            'value_2' => now()->diff(\Carbon\Carbon::create(2019,7,15)),
+            'value_2' => now()->diff(\Carbon\Carbon::create(2019,7,15))->days,
             'col_2' => '距离暑假（2019\07\15）的天数'
             ])
     </div>

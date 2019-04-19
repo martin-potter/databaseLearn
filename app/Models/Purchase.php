@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Purchase extends Model
 {
+    protected $table = 'purchases';
+    const TABLE = 'purchases';
     const ID = 'id';
     const CID = 'cid';
     const EID = 'eid';
