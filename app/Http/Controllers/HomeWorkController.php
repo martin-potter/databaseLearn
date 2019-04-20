@@ -19,19 +19,19 @@ class HomeWorkController extends Controller
                 'table' => Employee::TABLE,
                 'num' => Employee::query()->count(Employee::ID),
                 'desc' => '员工表',
-                'route' => ''
+                'route' => 'employee.index'
             ],[
                 'id' => 2,
                 'table' => Supplier::TABLE,
                 'num' => Supplier::query()->count(Supplier::ID),
                 'desc' => '供应商表',
-                'route' => ''
+                'route' => 'supplier.index'
             ],[
                 'id' => 3,
                 'table' => Product::TABLE,
                 'num' => Product::query()->count(Product::ID),
                 'desc' => '产品表',
-                'route' => ''
+                'route' => 'product.index'
             ],[
                 'id' => 4,
                 'table' => Customer::TABLE,
@@ -43,7 +43,7 @@ class HomeWorkController extends Controller
                 'table' => Purchase::TABLE,
                 'num' => Purchase::query()->count(Purchase::ID),
                 'desc' => '购买记录表',
-                'route' => ''
+                'route' => 'purchase.index'
             ]
         ]]);
     }

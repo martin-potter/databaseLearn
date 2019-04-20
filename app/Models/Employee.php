@@ -11,4 +11,14 @@ class Employee extends Model
     const ID = 'id';
     const NAME = 'ename';
     const CITY = 'city';
+
+    protected $fillable = [
+        self::NAME,
+        self::CITY
+    ];
+
+    public function purchases()
+    {
+        return $this->hasMany(Purchase::class,'eid','id');
+    }
 }

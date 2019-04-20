@@ -26,7 +26,11 @@ Route::get('/hw1', function () {
 Route::get('/hw2', 'HomeWorkController@hw2')->name('hw2');
 
 Route::group(['prefix' => 'hw2'], function () {
+    Route::resource('employee','EmployeeController');
+    Route::resource('supplier','SupplierController');
+    Route::resource('product','ProductController');
     Route::resource('customer','CustomerController');
+    Route::resource('purchase','PurchaseController');
 });
 
 Route::get('/test', function () {
