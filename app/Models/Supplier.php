@@ -12,4 +12,15 @@ class Supplier extends Model
     const NAME = 'sname';
     const CITY = 'city';
     const TELEPHONE = 'telephone_no';
+
+    protected $fillable = [
+        self::NAME,
+        self::CITY,
+        self::TELEPHONE
+    ];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class,'sid','id');
+    }
 }

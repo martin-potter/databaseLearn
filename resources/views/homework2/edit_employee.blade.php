@@ -20,23 +20,32 @@
                     {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
                     <div class="form-group">
                         <label for="inputCount3">ID(不可修改）：</label>
-                        <input type="text"  class="form-control" id="inputCount3" placeholder="###" name="id" value="{{ isset($id) ? $id : ''}}" readonly>
+                        <input type="text"  class="form-control" id="inputCount3"
+                               placeholder="###" name="id" value="{{ isset($id) ? $id : ''}}" readonly>
                     </div>
                     <div class="form-group">
                         <label for="inputCount3">员工姓名：</label>
-                        <input type="text" class="form-control" id="inputCount3" name="ename" value="{{ isset($ename) ? $ename : '' }}" placeholder="输入员工姓名">
+                        <input type="text" class="form-control" id="inputCount3" name="ename"
+                               value="{{ !empty(old('ename')) ? old('ename') : (isset($ename) ? $ename : '') }}"
+                               placeholder="输入员工姓名">
                     </div>
                     <div class="form-group">
                         <label for="inputCount3">城市：</label>
-                        <input type="text" class="form-control" id="inputCount3" name="city" value="{{ isset($city) ? $city : '' }}" placeholder="输入城市">
+                        <input type="text" class="form-control" id="inputCount3" name="city"
+                               value="{{ !empty(old('city')) ? old('city') : (isset($city) ? $city : '') }}"
+                               placeholder="输入城市">
                     </div>
                     <div class="form-group">
                         <label for="inputCount3">创建时间：</label>
-                        <input type="text" class="form-control" id="inputCount3" value="{{isset($created_at) ? $created_at : ''}}" placeholder="###" readonly>
+                        <input type="text" class="form-control" id="inputCount3"
+                               value="{{isset($created_at) ? $created_at : ''}}"
+                               placeholder="###" readonly>
                     </div>
                     <div class="form-group">
                         <label for="inputCount3">修改时间：</label>
-                        <input type="text" class="form-control" id="inputCount3" value="{{isset($updated_at) ? $updated_at : ''}}" placeholder="###" readonly>
+                        <input type="text" class="form-control" id="inputCount3"
+                               value="{{isset($updated_at) ? $updated_at : ''}}"
+                               placeholder="###" readonly>
                     </div>
                     <div class="form-group">
                         <a href="{{route('employee.index')}}" class="king-btn king-default mr10" style="background-color: rgba(72,73,68,0.35)" >返回</a>
