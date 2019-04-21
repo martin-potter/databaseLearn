@@ -19,8 +19,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="javascript:;">
-                            <span>管理者</span>
+                        <a href="https://martinpotter.cn">
+                            <span>马定港 2016154118</span>
                         </a>
                     </li>
                 </ul>
