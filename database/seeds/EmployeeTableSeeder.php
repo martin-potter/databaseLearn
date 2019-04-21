@@ -1,8 +1,7 @@
 <?php
 
-use App\Models\Emplyee;
+use App\Models\Employee;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class EmployeeTableSeeder extends Seeder
 {
@@ -15,12 +14,12 @@ class EmployeeTableSeeder extends Seeder
     {
         $now = now()->format('Y-m-d H:i:s');
         $insert = [
-            [Emplyee::NAME => 'Bob', Emplyee::CITY => 'Binghamton' , Emplyee::CREATED_AT=>$now, Emplyee::UPDATED_AT=>$now],
-            [Emplyee::NAME => 'John', Emplyee::CITY => 'Binghamton', Emplyee::CREATED_AT=>$now, Emplyee::UPDATED_AT=>$now],
-            [Emplyee::NAME => 'Lisa', Emplyee::CITY => 'Binghamton', Emplyee::CREATED_AT=>$now, Emplyee::UPDATED_AT=>$now],
-            [Emplyee::NAME => 'Matt', Emplyee::CITY => 'Vestal', Emplyee::CREATED_AT=>$now, Emplyee::UPDATED_AT=>$now],
+            [Employee::NAME => 'Bob', Employee::CITY => 'Binghamton' , Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
+            [Employee::NAME => 'John', Employee::CITY => 'Binghamton', Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
+            [Employee::NAME => 'Lisa', Employee::CITY => 'Binghamton', Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
+            [Employee::NAME => 'Matt', Employee::CITY => 'Vestal', Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
         ];
 
-        Emplyee::query()->insert($insert);
+        Employee::query()->insert($insert);
     }
 }
