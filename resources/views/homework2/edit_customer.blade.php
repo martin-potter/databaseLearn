@@ -40,7 +40,11 @@
                     </div>
                     <div class="form-group">
                         <label for="inputCount3">最后购买时间：</label>
-                        @include('shared._date_time_selector',['name' => 'last_visit_time', 'time' => isset($last_visit_time) ? $last_visit_time : ''])
+                        @include('shared._date_time_selector',
+                       [
+                           'name' => 'last_visit_time',
+                           'time' =>!empty(old('last_visit_time')) ? old('last_visit_time') : (isset($last_visit_time) ? $last_visit_time : '')
+                       ])
                     </div>
                     <div class="form-group">
                         <label for="inputCount3">创建时间：</label>

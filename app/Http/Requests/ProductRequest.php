@@ -55,9 +55,9 @@ class ProductRequest extends FormRequest
             'numeric' => ':attribute 必须是数字',
             'unique' => ':attribute 已经被占用，请更换',
             'max' =>  ':attribute 超过:max个字符限制',
-            'exists' => ':attribute 不存在'
+            'exists' => ':attribute 不存在',
+            'min' => ':attribute 小于下限 :min'
         ];
-
     }
 
     public function attributes()

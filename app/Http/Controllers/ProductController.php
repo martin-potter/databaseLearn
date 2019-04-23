@@ -49,14 +49,8 @@ class ProductController extends Controller
     public function create()
     {
         //查询供应商列表
-        $supplier_list = Supplier::all(Supplier::ID,Supplier::NAME)->toArray();
-        $list = [];
-        foreach ($supplier_list as $item) {
-            $tmp['id'] = $item[Supplier::ID];
-            $tmp['text'] = $item[Supplier::NAME];
-            $list[] = $tmp;
-        }
-        return view('homework2.edit_product', ['list' => $list]);
+        $supplier_list = Supplier::all(Supplier::ID.' as id',Supplier::NAME.' as text')->toArray();
+        return view('homework2.edit_product', ['list' => $supplier_list]);
     }
 
     /**

@@ -53,26 +53,39 @@
                     <div class="form-group">
                         <label for="inputPassword3">供应商：</label>
                         <p></p>
-                        @include('shared._data_selector',
-                        [
-                            'id' => 'supplier_selector',
-                            'name' => 'sid',
-                            'list' => $list,
-                            'selected' =>  !empty(old('sid')) ? old('sid') : (isset($sid) ? $sid : '')
-                        ])
+                        <div>
+                            <div class="king-block-content clearfix">
+                                <div class="plugin3_demo" id="supplier_selector" style="display:inline-block;">
+                                    <select class="select2_box" style="width:300px;" name="sid">
+                                        <option value=""></option>
+                                        @foreach($list as $item)
+                                            <option value="{{$item['id']}}"
+                                                {{(empty(old('sid')) ?
+                                                   (isset($sid) ?
+                                                       ($sid == $item['id'] ? ' selected="selected' : '')
+                                                       : '')
+                                                   : (old('sid') == $item['id'] ? ' selected="selected' : ''))
+                                                }}>
+                                                {{$item['text']}}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                        <div class="form-group">
-                            <label for="inputCount3">创建时间：</label>
-                            <input type="text" class="form-control" id="inputCount3"
-                                   value="{{isset($created_at) ? $created_at : ''}}"
-                                   placeholder="###" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputCount3">修改时间：</label>
-                            <input type="text" class="form-control" id="inputCount3"
-                                   value="{{isset($updated_at) ? $updated_at : ''}}"
-                                   placeholder="###" readonly>
-                        </div>
+                    <div class="form-group">
+                        <label for="inputCount3">创建时间：</label>
+                        <input type="text" class="form-control" id="inputCount3"
+                               value="{{isset($created_at) ? $created_at : ''}}"
+                               placeholder="###" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCount3">修改时间：</label>
+                        <input type="text" class="form-control" id="inputCount3"
+                               value="{{isset($updated_at) ? $updated_at : ''}}"
+                               placeholder="###" readonly>
+                    </div>
                     <div class="form-group">
                         <a href="{{route('product.index')}}" class="king-btn king-default mr10" style="background-color: rgba(72,73,68,0.35)" >返回</a>
                         <button type="submit" class="king-btn king-success mr10" value="提交">提交</button>
@@ -82,4 +95,12 @@
             </div>
         </div>
     </div>
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+    <script type="text/javascript">
+        $("#supplier_selector .select2_box").select2({
+            placeholder: '请选择供应商'
+        });
+    </script>
 @stop
