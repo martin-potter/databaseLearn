@@ -13,7 +13,7 @@ class CreateEmplyeesTable extends Migration
      */
     public function up()
     {
-        Schema::create('emplyees', function (Blueprint $table) {
+        Schema::create('employees', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('ename')->nullable();
             $table->string('city')->nullable();
