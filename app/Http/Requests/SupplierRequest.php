@@ -26,7 +26,7 @@ class SupplierRequest extends FormRequest
     {
         switch ($this->method()) {
             case 'PUT': return [
-                Supplier::CITY => 'alpha_dash|max:255|nullable',
+                Supplier::CITY => 'alpha_dash|max:<|nullable',
                 Supplier::NAME => 'required|alpha_dash|max:255',
                 Supplier::TELEPHONE => ['regex:/^[0-9]*$/','max:255']
             ];

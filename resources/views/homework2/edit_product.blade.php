@@ -1,5 +1,4 @@
 @extends('layouts.base',['array' => ['menu_3' => '1']])
-.
 
 @section('content')
     <div class="king-layout2-main mt15" style="width:960px;">

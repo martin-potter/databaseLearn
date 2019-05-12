@@ -9,20 +9,20 @@
     <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
     <!-- Bootstrap css -->
     <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
-{{--    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">--}}
+    {{--<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">--}}
     <!-- kendo ui css -->
-{{--    <link href="{{asset('css/kendo.common.min.css')}}" rel="stylesheet">--}}
-{{--    <link href="{{asset('css/kendo.default.min.css')}}" rel="stylesheet">--}}
+    {{--<link href="{{asset('css/kendo.common.min.css')}}" rel="stylesheet">--}}
+    {{--<link href="{{asset('css/kendo.default.min.css')}}" rel="stylesheet">--}}
     <!-- font-awesome -->
     {{--<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">--}}
     <!--蓝鲸提供的公用样式库 -->
     <link href="{{asset('css/bk.css')}}" rel="stylesheet">
     <link href="{{asset('css/bk_pack.css')}}" rel="stylesheet">
     <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
-    {{--<script src="{{asset('js/jquery-1.10.2.min.js')}}"></script>--}}
+    <script src="{{asset('js/jquery-1.10.2.min.js')}}"></script>
     <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
     {{--<script src="{{asset('js/echarts-all.js')}}"></script>--}}
-    {{--<script src="{{asset('js/bootstrap.min.js')}}"></script>--}}
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
     {{--<script src="{{asset('js/kendo.all.min.js')}}"></script>--}}
     {{--<script src="{{asset('js/bk.js')}}"></script>--}}
