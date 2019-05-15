@@ -44,8 +44,19 @@ class HomeWorkController extends Controller
                 'num' => Purchase::query()->count(Purchase::ID),
                 'desc' => '购买记录表',
                 'route' => 'purchase.index'
+            ],[
+                'id' => 5,
+                'table' => Purchase::TABLE,
+                'num' => Purchase::query()->count(Purchase::ID),
+                'desc' => '购买记录表',
+                'route' => 'purchase.index'
             ]
         ]]);
+    }
+
+    public function hw3(Request $request)
+    {
+        return view('hw3static');
     }
 
 }

@@ -33,6 +33,9 @@ Route::group(['prefix' => 'hw2'], function () {
     Route::resource('purchase','PurchaseController',['except' => 'show']);
 });
 
+// 作业三
+Route::get('/hw3', 'HomeWorkController@hw3')->name('hw3');
+
 Route::get('/test', function () {
     return view('test');
 });

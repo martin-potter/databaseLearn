@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PurchaseSaved;
 use App\Http\Requests\PurchaseRequest;
 use App\Models\Customer;
 use App\Models\Employee;

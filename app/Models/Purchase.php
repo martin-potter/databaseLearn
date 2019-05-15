@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Session;
 
 class Purchase extends Model
 {
@@ -40,4 +41,9 @@ class Purchase extends Model
         return $this->belongsTo(Product::class,'pid','id');
     }
 
+    protected static function boot()
+    {
+        parent::boot();
+    }
 }
+

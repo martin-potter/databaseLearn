@@ -13,9 +13,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-responsive-collapse" id="king-horizontal-nav2-collapse">
                 <ul class="nav navbar-nav">
-                    <li {{ isset($menu_1) ? 'class=king-navbar-active' : '' }}><a href="{{route('index')}}">首页</a></li>
                     <li {{ isset($menu_2) ? 'class=king-navbar-active' : '' }}><a href="{{route('hw1')}}">作业一</a></li>
                     <li {{ isset($menu_3) ? 'class=king-navbar-active' : '' }}><a href="{{route('hw2')}}">作业二</a></li>
+                    <li {{ isset($menu_4) ? 'class=king-navbar-active' : '' }}><a href="{{route('hw3')}}">作业三</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>

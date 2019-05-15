@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Listeners\LogInfo;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -20,6 +21,10 @@ class EventServiceProvider extends ServiceProvider
         ],
     ];
 
+    protected $subscribe = [
+        LogInfo::class
+    ];
+
     /**
      * Register any events for your application.
      *
@@ -28,7 +33,5 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
-        //
     }
 }
