@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Customer;
 use App\Models\Employee;
+use App\Models\Log;
 use App\Models\Product;
 use App\Models\Purchase;
 use App\Models\Supplier;
@@ -45,11 +46,11 @@ class HomeWorkController extends Controller
                 'desc' => '购买记录表',
                 'route' => 'purchase.index'
             ],[
-                'id' => 5,
-                'table' => Purchase::TABLE,
-                'num' => Purchase::query()->count(Purchase::ID),
-                'desc' => '购买记录表',
-                'route' => 'purchase.index'
+                'id' => 6,
+                'table' => Log::TABLE,
+                'num' => Log::query()->count(Log::ID),
+                'desc' => '日志记录表',
+                'route' => 'log.index'
             ]
         ]]);
     }

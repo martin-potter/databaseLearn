@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Log extends Model
 {
     protected $table = 'logs';
+    const ID = 'id';
+    const TABLE = 'logs';
     const WHO = 'who';
     const TIME = 'time';
     const TABLE_NAME = 'table_name';
@@ -19,4 +21,9 @@ class Log extends Model
         self::KEY_VALUE,
         self::OPERATION
     ];
+
+    public function employee()
+    {
+        return $this->hasOne(Employee::class, Employee::ID, Log::WHO) ;
+    }
 }

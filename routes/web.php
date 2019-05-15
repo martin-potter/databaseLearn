@@ -31,6 +31,7 @@ Route::group(['prefix' => 'hw2'], function () {
     Route::resource('product','ProductController',['except' => 'show']);
     Route::resource('customer','CustomerController',['except' => 'show']);
     Route::resource('purchase','PurchaseController',['except' => 'show']);
+    Route::resource('log', 'LogController', ['except' => 'show']);
 });
 
 // 作业三
