@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\LogRequest;
 use App\Models\Employee;
 use App\Models\Log;
-use Illuminate\Support\Facades\Session;
 
 class LogController extends Controller
 {
