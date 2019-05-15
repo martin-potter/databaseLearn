@@ -6,6 +6,7 @@ use App\Http\Requests\CustomerRequest;
 use App\Http\Requests\SupplierRequest;
 use App\Models\Customer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class CustomerController extends Controller
 {

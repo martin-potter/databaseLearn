@@ -40,10 +40,5 @@ class Purchase extends Model
     {
         return $this->belongsTo(Product::class,'pid','id');
     }
-
-    protected static function boot()
-    {
-        parent::boot();
-    }
 }
 

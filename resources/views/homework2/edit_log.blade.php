@@ -100,7 +100,7 @@
                                            placeholder="###" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <a href="{{route('purchase.index')}}" class="king-btn king-default mr10" style="background-color: rgba(72,73,68,0.35)" >返回</a>
+                                    <a href="{{route('log.index')}}" class="king-btn king-default mr10" style="background-color: rgba(72,73,68,0.35)" >返回</a>
                                     <button type="submit" class="king-btn king-success mr10" value="提交">提交</button>
                                     <button class="king-btn king-default mr10" type="reset" value="重置">重置</button>
                                 </div>
