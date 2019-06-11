@@ -20,7 +20,7 @@
                             通过选定产品的id，统计该产品每月的销售情况（销售数量、销售价格），只需要列出有销售记录的月份。
                         </h4>
                         <h4><b>提示：点击下面按钮进入操作</b></h4>
-                        <a class="king-btn-demo king-btn king-info" style=" font-size: large; padding: auto;width: 200px; margin-top: 30px" title="销售统计">销售统计 >>></a>
+                        <a href="{{route('static')}}" class="king-btn-demo king-btn king-info" style=" font-size: large; padding: auto;width: 200px; margin-top: 30px" title="销售统计">销售统计 >>></a>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                             5 每个对应操作完成需要提示相关信息
                         </h4>
                         <h4><b>提示：点击下面按钮进入操作</b></h4>
-                        <a class="king-btn-demo king-btn king-info" style="font-size: large; padding: auto;width: 200px; margin-top: 30px" title="购买记录">购买记录 >>></a>
+                        <a class="king-btn-demo king-btn king-info" style="font-size: large; padding: auto;width: 200px; margin-top: 30px" href="{{route('shop')}}" title="购买记录">购买记录 >>></a>
                     </div>
                 </div>
             </div>

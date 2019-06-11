@@ -15,14 +15,8 @@ class LogController extends Controller
      */
     public function index()
     {
-        $relations = [
-            'employee:'.Employee::ID.','.Employee::NAME
-        ];
-        $data = Log::with($relations)->get();
-        foreach ($data as $log) {
-            $log[Log::WHO] = $log['employee'][Employee::NAME];
-            unset($log['employee']);
-        }
+
+        $data = Log::all();
         return view('homework2._list',[
             'title'=>'日志 log',
             'columns' => [

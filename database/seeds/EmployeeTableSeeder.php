@@ -14,6 +14,7 @@ class EmployeeTableSeeder extends Seeder
     {
         $now = now()->format('Y-m-d H:i:s');
         $insert = [
+            [Employee::NAME => 'Amy', Employee::CITY => 'Vestal' , Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
             [Employee::NAME => 'Bob', Employee::CITY => 'Binghamton' , Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
             [Employee::NAME => 'John', Employee::CITY => 'Binghamton', Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
             [Employee::NAME => 'Lisa', Employee::CITY => 'Binghamton', Employee::CREATED_AT=>$now, Employee::UPDATED_AT=>$now],
